@@ -1,0 +1,112 @@
+fileVersion: 1
+id: 28151a06-e922-47f5-ba0e-a75eaf90c791
+name: LOAD_TERRITORIES_TRADERS_SOUTH
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: DV_STG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c942f69e-d0fa-4e0a-a7a2-09b0009797dd
+          stepCounter: 28151a06-e922-47f5-ba0e-a75eaf90c791
+        config: {}
+        dataType: NVARCHAR2
+        defaultValue: ""
+        description: ""
+        name: TERRITORYID
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0706f8ef-c9a2-44ca-9f2a-c0c12bd30ebc
+          stepCounter: 28151a06-e922-47f5-ba0e-a75eaf90c791
+        config: {}
+        dataType: NVARCHAR2
+        defaultValue: ""
+        description: ""
+        name: TERRITORYDESCRIPTION
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: eef079ac-8709-40fc-a1ba-39714e1b0d58
+          stepCounter: 28151a06-e922-47f5-ba0e-a75eaf90c791
+        config: {}
+        dataType: NVARCHAR2
+        defaultValue: ""
+        description: ""
+        isSystemRecordSource: true
+        name: DSS_RECORD_SOURCE
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7b58a98f-5d9f-4429-a673-e453cc43093f
+          stepCounter: 28151a06-e922-47f5-ba0e-a75eaf90c791
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        isSystemLoadDate: true
+        name: DSS_LOAD_DATE
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "CAST(CURRENT_TIMESTAMP AS TIMESTAMP)"
+        uniqueKey: false
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies: []
+        join:
+          joinCondition: |-
+            FROM {{ ref('<storage location>', '') }}
+        name: LOAD_TERRITORIES_TRADERS_SOUTH
+        noLinkRefs: []
+  name: LOAD_TERRITORIES_TRADERS_SOUTH
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
