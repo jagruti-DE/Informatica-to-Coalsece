@@ -1,0 +1,184 @@
+fileVersion: 1
+id: e7338d02-d404-49d7-a315-67f57e54ae42
+name: STAGE_TERRITORY_TRADERS_NORTH
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: true
+  locationName: DV_STG
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ed50f202-f88a-4b45-a706-b0f6bbb8b256
+          stepCounter: e7338d02-d404-49d7-a315-67f57e54ae42
+        config: {}
+        dataType: NVARCHAR2
+        defaultValue: ""
+        description: ""
+        name: HK_H_TERRITORY
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b70cfc36-85c8-4a49-8fec-ed4f7722fce1
+                stepCounter: 11c0ab39-f144-4c38-b730-8934ac089621
+            transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fa24e0c1-edf2-4020-aefd-f9894e0fa7c1
+          stepCounter: e7338d02-d404-49d7-a315-67f57e54ae42
+        config: {}
+        dataType: NVARCHAR2
+        defaultValue: ""
+        description: ""
+        name: TERRITORY_ID
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b0540a99-f8e3-4f4b-916a-8117a7c3a662
+                stepCounter: 11c0ab39-f144-4c38-b730-8934ac089621
+            transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0706f8ef-c9a2-44ca-9f2a-c0c12bd30ebc
+          stepCounter: e7338d02-d404-49d7-a315-67f57e54ae42
+        config: {}
+        dataType: NVARCHAR2
+        defaultValue: ""
+        description: ""
+        name: TERRITORYDESCRIPTION
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f4ae1b96-6f72-47e2-8b6b-fda3d7a1b396
+                stepCounter: 11c0ab39-f144-4c38-b730-8934ac089621
+            transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ec03fea9-15b8-4e78-b050-e74178f5f25b
+          stepCounter: e7338d02-d404-49d7-a315-67f57e54ae42
+        config: {}
+        dataType: NVARCHAR2
+        defaultValue: ""
+        description: ""
+        name: DSS_CHANGE_HASH_TERR_NORTH
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ada144cf-eb27-47ac-865b-c3d8bd6e4cff
+                stepCounter: 11c0ab39-f144-4c38-b730-8934ac089621
+            transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: eef079ac-8709-40fc-a1ba-39714e1b0d58
+          stepCounter: e7338d02-d404-49d7-a315-67f57e54ae42
+        config: {}
+        dataType: NVARCHAR2
+        defaultValue: ""
+        description: ""
+        isSystemRecordSource: true
+        name: DSS_RECORD_SOURCE
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 55dc0483-1ca0-46e9-91ce-2c0c26d5a99b
+                stepCounter: 11c0ab39-f144-4c38-b730-8934ac089621
+            transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7b58a98f-5d9f-4429-a673-e453cc43093f
+          stepCounter: e7338d02-d404-49d7-a315-67f57e54ae42
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        isSystemLoadDate: true
+        name: DSS_LOAD_DATE
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 91d1b797-2a08-4714-98c3-3cf1387fa17e
+                stepCounter: 11c0ab39-f144-4c38-b730-8934ac089621
+            transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0b0b8041-32c9-4017-9865-5e560c2b7056
+          stepCounter: e7338d02-d404-49d7-a315-67f57e54ae42
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_TIME
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1a6d9d6b-e0fd-41ff-b7f1-7f3c47c29319
+                stepCounter: 11c0ab39-f144-4c38-b730-8934ac089621
+            transform: ""
+        uniqueKey: false
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          EXP_stage_territory_north: 11c0ab39-f144-4c38-b730-8934ac089621
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: <storage location>
+            nodeName: EXP_stage_territory_north
+        join:
+          joinCondition: |-
+            FROM {{ ref('<storage location>', 'EXP_stage_territory_north') }}
+        name: STAGE_TERRITORY_TRADERS_NORTH_m_stage_territory_traders_north_EXP_stage_territory_north
+        noLinkRefs: []
+  name: STAGE_TERRITORY_TRADERS_NORTH
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
