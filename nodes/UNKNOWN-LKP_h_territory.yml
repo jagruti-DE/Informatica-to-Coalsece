@@ -1,0 +1,294 @@
+fileVersion: 1
+id: 7854c430-cc66-42e4-933a-2e98da2e4e96
+name: LKP_h_territory
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: true
+  locationName: SRC
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 445d9a4e-9373-488b-9cd6-8a0d3178368a
+          stepCounter: 7854c430-cc66-42e4-933a-2e98da2e4e96
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: territory_id_in
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b0540a99-f8e3-4f4b-916a-8117a7c3a662
+                stepCounter: 59483018-fdbb-4f2a-ab58-323384bfcc31
+            transform: ""
+          - columnReferences:
+              - columnCounter: b0540a99-f8e3-4f4b-916a-8117a7c3a662
+                stepCounter: 59483018-fdbb-4f2a-ab58-323384bfcc31
+            transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ed50f202-f88a-4b45-a706-b0f6bbb8b256
+          stepCounter: 7854c430-cc66-42e4-933a-2e98da2e4e96
+        config: {}
+        dataType: NSTRING
+        defaultValue: ""
+        description: ""
+        name: HK_H_TERRITORY
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b70cfc36-85c8-4a49-8fec-ed4f7722fce1
+                stepCounter: 59483018-fdbb-4f2a-ab58-323384bfcc31
+            transform: ""
+          - columnReferences:
+              - columnCounter: b70cfc36-85c8-4a49-8fec-ed4f7722fce1
+                stepCounter: 59483018-fdbb-4f2a-ab58-323384bfcc31
+            transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fa24e0c1-edf2-4020-aefd-f9894e0fa7c1
+          stepCounter: 7854c430-cc66-42e4-933a-2e98da2e4e96
+        config: {}
+        dataType: NSTRING
+        defaultValue: ""
+        description: ""
+        name: TERRITORY_ID
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b0540a99-f8e3-4f4b-916a-8117a7c3a662
+                stepCounter: 59483018-fdbb-4f2a-ab58-323384bfcc31
+            transform: ""
+          - columnReferences:
+              - columnCounter: b0540a99-f8e3-4f4b-916a-8117a7c3a662
+                stepCounter: 59483018-fdbb-4f2a-ab58-323384bfcc31
+            transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: eef079ac-8709-40fc-a1ba-39714e1b0d58
+          stepCounter: 7854c430-cc66-42e4-933a-2e98da2e4e96
+        config: {}
+        dataType: NSTRING
+        defaultValue: ""
+        description: ""
+        isSystemRecordSource: true
+        name: DSS_RECORD_SOURCE
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 55dc0483-1ca0-46e9-91ce-2c0c26d5a99b
+                stepCounter: 59483018-fdbb-4f2a-ab58-323384bfcc31
+            transform: ""
+          - columnReferences:
+              - columnCounter: 55dc0483-1ca0-46e9-91ce-2c0c26d5a99b
+                stepCounter: 59483018-fdbb-4f2a-ab58-323384bfcc31
+            transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7b58a98f-5d9f-4429-a673-e453cc43093f
+          stepCounter: 7854c430-cc66-42e4-933a-2e98da2e4e96
+        config: {}
+        dataType: DATE/TIME
+        defaultValue: ""
+        description: ""
+        isSystemLoadDate: true
+        name: DSS_LOAD_DATE
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 91d1b797-2a08-4714-98c3-3cf1387fa17e
+                stepCounter: 59483018-fdbb-4f2a-ab58-323384bfcc31
+            transform: ""
+          - columnReferences:
+              - columnCounter: 91d1b797-2a08-4714-98c3-3cf1387fa17e
+                stepCounter: 59483018-fdbb-4f2a-ab58-323384bfcc31
+            transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0b0b8041-32c9-4017-9865-5e560c2b7056
+          stepCounter: 7854c430-cc66-42e4-933a-2e98da2e4e96
+        config: {}
+        dataType: DATE/TIME
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_TIME
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1a6d9d6b-e0fd-41ff-b7f1-7f3c47c29319
+                stepCounter: 59483018-fdbb-4f2a-ab58-323384bfcc31
+            transform: ""
+          - columnReferences:
+              - columnCounter: 1a6d9d6b-e0fd-41ff-b7f1-7f3c47c29319
+                stepCounter: 59483018-fdbb-4f2a-ab58-323384bfcc31
+            transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d089f098-3269-4b3b-a206-9bd5544f73ea
+          stepCounter: 7854c430-cc66-42e4-933a-2e98da2e4e96
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: hk_h_territory_in
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b70cfc36-85c8-4a49-8fec-ed4f7722fce1
+                stepCounter: 59483018-fdbb-4f2a-ab58-323384bfcc31
+            transform: ""
+          - columnReferences:
+              - columnCounter: b70cfc36-85c8-4a49-8fec-ed4f7722fce1
+                stepCounter: 59483018-fdbb-4f2a-ab58-323384bfcc31
+            transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 45a7791c-84bd-409c-ae43-039a9c915c7f
+          stepCounter: 7854c430-cc66-42e4-933a-2e98da2e4e96
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: dss_record_source_in
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 55dc0483-1ca0-46e9-91ce-2c0c26d5a99b
+                stepCounter: 59483018-fdbb-4f2a-ab58-323384bfcc31
+            transform: ""
+          - columnReferences:
+              - columnCounter: 55dc0483-1ca0-46e9-91ce-2c0c26d5a99b
+                stepCounter: 59483018-fdbb-4f2a-ab58-323384bfcc31
+            transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fab06b56-f093-4927-9319-8dedcaadb501
+          stepCounter: 7854c430-cc66-42e4-933a-2e98da2e4e96
+        config: {}
+        dataType: DATE/TIME
+        defaultValue: ""
+        description: ""
+        name: dss_load_date_in
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 91d1b797-2a08-4714-98c3-3cf1387fa17e
+                stepCounter: 59483018-fdbb-4f2a-ab58-323384bfcc31
+            transform: ""
+          - columnReferences:
+              - columnCounter: 91d1b797-2a08-4714-98c3-3cf1387fa17e
+                stepCounter: 59483018-fdbb-4f2a-ab58-323384bfcc31
+            transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c5f29a15-142d-4b4e-9001-bbf06c02d6a8
+          stepCounter: 7854c430-cc66-42e4-933a-2e98da2e4e96
+        config: {}
+        dataType: DATE/TIME
+        defaultValue: ""
+        description: ""
+        name: dss_create_time_in
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1a6d9d6b-e0fd-41ff-b7f1-7f3c47c29319
+                stepCounter: 59483018-fdbb-4f2a-ab58-323384bfcc31
+            transform: ""
+          - columnReferences:
+              - columnCounter: 1a6d9d6b-e0fd-41ff-b7f1-7f3c47c29319
+                stepCounter: 59483018-fdbb-4f2a-ab58-323384bfcc31
+            transform: ""
+        uniqueKey: false
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          EXP_h_territory: 59483018-fdbb-4f2a-ab58-323384bfcc31
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: <storage location>
+            nodeName: EXP_h_territory
+        join:
+          joinCondition: |-
+            FROM {{ ref('<storage location>', 'EXP_h_territory') }}
+        name: LKP_h_territory_m_h_territory
+        noLinkRefs: []
+      - aliases:
+          EXP_h_territory: 59483018-fdbb-4f2a-ab58-323384bfcc31
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: <storage location>
+            nodeName: EXP_h_territory
+        join:
+          joinCondition: |-
+            FROM {{ ref('<storage location>', 'EXP_h_territory') }}
+        name: LKP_h_territory_m_h_territory_EXP_h_territory
+        noLinkRefs: []
+  name: LKP_h_territory
+  overrideSQL: false
+  schema: ""
+  sqlType: Fact
+  type: sql
+  version: 1
+type: Node

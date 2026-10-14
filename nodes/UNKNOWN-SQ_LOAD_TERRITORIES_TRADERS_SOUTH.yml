@@ -1,0 +1,121 @@
+fileVersion: 1
+id: 0e055b2b-ce53-467e-9788-bf229d5e2234
+name: SQ_LOAD_TERRITORIES_TRADERS_SOUTH
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: true
+  locationName: SRC
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c942f69e-d0fa-4e0a-a7a2-09b0009797dd
+          stepCounter: 0e055b2b-ce53-467e-9788-bf229d5e2234
+        config: {}
+        dataType: NSTRING
+        defaultValue: ""
+        description: ""
+        name: TERRITORYID
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c942f69e-d0fa-4e0a-a7a2-09b0009797dd
+                stepCounter: 28151a06-e922-47f5-ba0e-a75eaf90c791
+            transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0706f8ef-c9a2-44ca-9f2a-c0c12bd30ebc
+          stepCounter: 0e055b2b-ce53-467e-9788-bf229d5e2234
+        config: {}
+        dataType: NSTRING
+        defaultValue: ""
+        description: ""
+        name: TERRITORYDESCRIPTION
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0706f8ef-c9a2-44ca-9f2a-c0c12bd30ebc
+                stepCounter: 28151a06-e922-47f5-ba0e-a75eaf90c791
+            transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: eef079ac-8709-40fc-a1ba-39714e1b0d58
+          stepCounter: 0e055b2b-ce53-467e-9788-bf229d5e2234
+        config: {}
+        dataType: NSTRING
+        defaultValue: ""
+        description: ""
+        isSystemRecordSource: true
+        name: DSS_RECORD_SOURCE
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: eef079ac-8709-40fc-a1ba-39714e1b0d58
+                stepCounter: 28151a06-e922-47f5-ba0e-a75eaf90c791
+            transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7b58a98f-5d9f-4429-a673-e453cc43093f
+          stepCounter: 0e055b2b-ce53-467e-9788-bf229d5e2234
+        config: {}
+        dataType: DATE/TIME
+        defaultValue: ""
+        description: ""
+        isSystemLoadDate: true
+        name: DSS_LOAD_DATE
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7b58a98f-5d9f-4429-a673-e453cc43093f
+                stepCounter: 28151a06-e922-47f5-ba0e-a75eaf90c791
+            transform: ""
+        uniqueKey: false
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          LOAD_TERRITORIES_TRADERS_SOUTH: 28151a06-e922-47f5-ba0e-a75eaf90c791
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: <storage location>
+            nodeName: LOAD_TERRITORIES_TRADERS_SOUTH
+        join:
+          joinCondition: |-
+            FROM {{ ref('<storage location>', 'LOAD_TERRITORIES_TRADERS_SOUTH') }}
+        name: SQ_LOAD_TERRITORIES_TRADERS_SOUTH_m_stage_territory_traders_south_LOAD_TERRITORIES_TRADERS_SOUTH
+        noLinkRefs: []
+  name: SQ_LOAD_TERRITORIES_TRADERS_SOUTH
+  overrideSQL: false
+  schema: ""
+  sqlType: Fact
+  type: sql
+  version: 1
+type: Node
