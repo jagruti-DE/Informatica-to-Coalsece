@@ -1,0 +1,230 @@
+fileVersion: 1
+id: 11c0ab39-f144-4c38-b730-8934ac089621
+name: EXP_stage_territory_north
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: true
+  locationName: SRC
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b0540a99-f8e3-4f4b-916a-8117a7c3a662
+          stepCounter: 11c0ab39-f144-4c38-b730-8934ac089621
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: territory_id
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "territoryid"
+          - columnReferences: []
+            transform: "territoryid"
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f4ae1b96-6f72-47e2-8b6b-fda3d7a1b396
+          stepCounter: 11c0ab39-f144-4c38-b730-8934ac089621
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: territorydescription
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0706f8ef-c9a2-44ca-9f2a-c0c12bd30ebc
+                stepCounter: 2ba38dbc-ee28-4aba-8d2f-28b501ba3bdb
+            transform: "territorydescription"
+          - columnReferences:
+              - columnCounter: 0706f8ef-c9a2-44ca-9f2a-c0c12bd30ebc
+                stepCounter: 2ba38dbc-ee28-4aba-8d2f-28b501ba3bdb
+            transform: "territorydescription"
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 55dc0483-1ca0-46e9-91ce-2c0c26d5a99b
+          stepCounter: 11c0ab39-f144-4c38-b730-8934ac089621
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        isSystemRecordSource: true
+        name: dss_record_source
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: eef079ac-8709-40fc-a1ba-39714e1b0d58
+                stepCounter: 2ba38dbc-ee28-4aba-8d2f-28b501ba3bdb
+            transform: "dss_record_source"
+          - columnReferences:
+              - columnCounter: eef079ac-8709-40fc-a1ba-39714e1b0d58
+                stepCounter: 2ba38dbc-ee28-4aba-8d2f-28b501ba3bdb
+            transform: "dss_record_source"
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 91d1b797-2a08-4714-98c3-3cf1387fa17e
+          stepCounter: 11c0ab39-f144-4c38-b730-8934ac089621
+        config: {}
+        dataType: DATE/TIME
+        defaultValue: ""
+        description: ""
+        isSystemLoadDate: true
+        name: dss_load_date
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7b58a98f-5d9f-4429-a673-e453cc43093f
+                stepCounter: 2ba38dbc-ee28-4aba-8d2f-28b501ba3bdb
+            transform: "dss_load_date"
+          - columnReferences:
+              - columnCounter: 7b58a98f-5d9f-4429-a673-e453cc43093f
+                stepCounter: 2ba38dbc-ee28-4aba-8d2f-28b501ba3bdb
+            transform: "dss_load_date"
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1a6d9d6b-e0fd-41ff-b7f1-7f3c47c29319
+          stepCounter: 11c0ab39-f144-4c38-b730-8934ac089621
+        config: {}
+        dataType: DATE/TIME
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: dss_create_time
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "SYSDATE"
+          - columnReferences: []
+            transform: "SYSDATE"
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b70cfc36-85c8-4a49-8fec-ed4f7722fce1
+          stepCounter: 11c0ab39-f144-4c38-b730-8934ac089621
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: hk_h_territory
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "MD5(IIF(ISNULL(territoryid), 'null', TO_CHAR(territoryid)))"
+          - columnReferences: []
+            transform: "MD5(IIF(ISNULL(territoryid), 'null', TO_CHAR(territoryid)))"
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ada144cf-eb27-47ac-865b-c3d8bd6e4cff
+          stepCounter: 11c0ab39-f144-4c38-b730-8934ac089621
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: dss_change_hash_terr_north
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "MD5(IIF(ISNULL(territorydescription), 'null', territorydescription))"
+          - columnReferences: []
+            transform: "MD5(IIF(ISNULL(territorydescription), 'null', territorydescription))"
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 48f7ab81-6808-4d87-829c-78df12324bdc
+          stepCounter: 11c0ab39-f144-4c38-b730-8934ac089621
+        config: {}
+        dataType: VARCHAR
+        defaultValue: ""
+        description: ""
+        name: territoryid
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c942f69e-d0fa-4e0a-a7a2-09b0009797dd
+                stepCounter: 2ba38dbc-ee28-4aba-8d2f-28b501ba3bdb
+            transform: ""
+          - columnReferences:
+              - columnCounter: c942f69e-d0fa-4e0a-a7a2-09b0009797dd
+                stepCounter: 2ba38dbc-ee28-4aba-8d2f-28b501ba3bdb
+            transform: ""
+        uniqueKey: false
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          SQ_LOAD_TERRITORIES_TRADERS_NORTH: 2ba38dbc-ee28-4aba-8d2f-28b501ba3bdb
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: <storage location>
+            nodeName: SQ_LOAD_TERRITORIES_TRADERS_NORTH
+        join:
+          joinCondition: |-
+            FROM {{ ref('<storage location>', 'SQ_LOAD_TERRITORIES_TRADERS_NORTH') }}
+        name: EXP_stage_territory_north_m_stage_territory_traders_north
+        noLinkRefs: []
+      - aliases:
+          SQ_LOAD_TERRITORIES_TRADERS_NORTH: 2ba38dbc-ee28-4aba-8d2f-28b501ba3bdb
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: <storage location>
+            nodeName: SQ_LOAD_TERRITORIES_TRADERS_NORTH
+        join:
+          joinCondition: |-
+            FROM {{ ref('<storage location>', 'SQ_LOAD_TERRITORIES_TRADERS_NORTH') }}
+        name: EXP_stage_territory_north_m_stage_territory_traders_north_SQ_LOAD_TERRITORIES_TRADERS_NORTH
+        noLinkRefs: []
+  name: EXP_stage_territory_north
+  overrideSQL: false
+  schema: ""
+  sqlType: Fact
+  type: sql
+  version: 1
+type: Node

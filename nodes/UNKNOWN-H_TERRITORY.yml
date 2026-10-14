@@ -1,0 +1,142 @@
+fileVersion: 1
+id: 889f101c-5c1e-424a-84f8-bcbf9b0eb818
+name: H_TERRITORY
+operation:
+  config:
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: true
+  locationName: DV_HUB
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ed50f202-f88a-4b45-a706-b0f6bbb8b256
+          stepCounter: 889f101c-5c1e-424a-84f8-bcbf9b0eb818
+        config: {}
+        dataType: NVARCHAR2
+        defaultValue: ""
+        description: ""
+        name: HK_H_TERRITORY
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d089f098-3269-4b3b-a206-9bd5544f73ea
+                stepCounter: f76291b6-46ba-4507-b7db-7088f09b924f
+            transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fa24e0c1-edf2-4020-aefd-f9894e0fa7c1
+          stepCounter: 889f101c-5c1e-424a-84f8-bcbf9b0eb818
+        config: {}
+        dataType: NVARCHAR2
+        defaultValue: ""
+        description: ""
+        name: TERRITORY_ID
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 445d9a4e-9373-488b-9cd6-8a0d3178368a
+                stepCounter: f76291b6-46ba-4507-b7db-7088f09b924f
+            transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: eef079ac-8709-40fc-a1ba-39714e1b0d58
+          stepCounter: 889f101c-5c1e-424a-84f8-bcbf9b0eb818
+        config: {}
+        dataType: NVARCHAR2
+        defaultValue: ""
+        description: ""
+        isSystemRecordSource: true
+        name: DSS_RECORD_SOURCE
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 45a7791c-84bd-409c-ae43-039a9c915c7f
+                stepCounter: f76291b6-46ba-4507-b7db-7088f09b924f
+            transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7b58a98f-5d9f-4429-a673-e453cc43093f
+          stepCounter: 889f101c-5c1e-424a-84f8-bcbf9b0eb818
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        isSystemLoadDate: true
+        name: DSS_LOAD_DATE
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fab06b56-f093-4927-9319-8dedcaadb501
+                stepCounter: f76291b6-46ba-4507-b7db-7088f09b924f
+            transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0b0b8041-32c9-4017-9865-5e560c2b7056
+          stepCounter: 889f101c-5c1e-424a-84f8-bcbf9b0eb818
+        config: {}
+        dataType: DATE
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: DSS_CREATE_TIME
+        nullable: false
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c5f29a15-142d-4b4e-9001-bbf06c02d6a8
+                stepCounter: f76291b6-46ba-4507-b7db-7088f09b924f
+            transform: ""
+        uniqueKey: false
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          FIL_new_territory: f76291b6-46ba-4507-b7db-7088f09b924f
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: <storage location>
+            nodeName: FIL_new_territory
+        join:
+          joinCondition: |-
+            FROM {{ ref('<storage location>', 'FIL_new_territory') }}
+        name: H_TERRITORY_m_h_territory_FIL_new_territory
+        noLinkRefs: []
+  name: H_TERRITORY
+  overrideSQL: false
+  schema: ""
+  sqlType: DV:::6
+  type: sql
+  version: 1
+type: Node
