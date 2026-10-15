@@ -1,5 +1,9 @@
 defaultStorageMapping: TARGET
 fileVersion: 1
 locations:
+  - DV_HUB
+  - DV_LND
+  - DV_SAT
+  - DV_STG
   - SRC
   - TARGET
