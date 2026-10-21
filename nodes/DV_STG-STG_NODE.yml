@@ -1,5 +1,5 @@
 fileVersion: 1
-id: c534d07a-fccb-4764-8c31-04ce06c65021
+id: 20493a2a-aaa7-448c-b8e6-a95fe2afdec1
 name: STG_NODE
 operation:
   config:
@@ -12,7 +12,7 @@ operation:
   deployEnabled: true
   description: ""
   isMultisource: false
-  locationName: TARGET
+  locationName: DV_STG
   materializationType: table
   metadata:
     appliedNodeTests: []

@@ -1,9 +1,14 @@
-defaultStorageMapping: TARGET
+defaultStorageMapping: DV_STG
 fileVersion: 1
 locations:
+  - DM_DIM
+  - DM_EDW
+  - DM_FCT
+  - DM_LND
+  - DM_ODS
+  - DM_STG
   - DV_HUB
   - DV_LND
   - DV_SAT
   - DV_STG
-  - SRC
   - TARGET
